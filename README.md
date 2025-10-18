@@ -22,7 +22,7 @@ Create a `.env` file in the root of the project:
 DATABASE_URL=postgresql+psycopg2://nayan:password123@localhost:5432/movie_recommender
 
 # API key for movie recommendation service
-GEMINI_API_KEY=AIzaSyBEaL-Ki5C8kcK8TwI2Xa5ekcD3EMiJj5c
+GEMINI_API_KEY=key
 ```
 
 ---
