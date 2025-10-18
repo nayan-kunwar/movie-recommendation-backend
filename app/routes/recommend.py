@@ -11,6 +11,7 @@ router = APIRouter(prefix="/recommend", tags=["Recommendations"])
 async def recommend_movies(request: schemas.RecommendationCreate, db: Session = Depends(get_db)):
     movies = await get_movie_recommendations(request.user_input)
 
+    print(request.user_input)
     new_entry = models.Recommendation(
         user_input=request.user_input,
         recommended_movies=json.dumps(movies)
